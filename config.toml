@@ -1,0 +1,34 @@
+# The URL the site will be built for
+base_url = "https://zmt00.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "terminimal"
+taxonomies = [
+	{name = "tags"}
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+author = "zmt00"
+logo_text = "zmt00"
+
+accent_color = "green"
+background_color = "blue"
+
+menu_items = [
+	{name = "blog", url = "$BASE_URL"},
+	{name = "tags", url = "$BASE_URL/tags"},
+	{name = "archive", url = "$BASE_URL/archive"},
+	{name = "about", url = "$BASE_URL/about"},
+	{name = "github", url = "https://github.com/zmt00", newtab = true},
+]
